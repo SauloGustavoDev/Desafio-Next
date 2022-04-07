@@ -20,8 +20,6 @@ public class MainModel {
     public void setResultado(int digito) {
         this.resultado = digito;
     }
-
-
 }
 
 

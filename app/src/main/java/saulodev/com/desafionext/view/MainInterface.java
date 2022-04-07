@@ -37,7 +37,7 @@ public class MainInterface extends AppCompatActivity{
                 mainViewModel.setMutableDigitado(numero);
                 mainViewModel.passarResultado();
                 binding.setViewModel(mainViewModel);
-                binding.textoResultado.setVisibility(View.VISIBLE);
+                mainViewModel.visibilidade(binding.textoResultado);
             }
         });
     }

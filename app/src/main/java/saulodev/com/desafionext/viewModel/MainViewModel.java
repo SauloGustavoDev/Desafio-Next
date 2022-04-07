@@ -1,6 +1,9 @@
 package saulodev.com.desafionext.viewModel;
 
 
+import android.view.View;
+import android.widget.TextView;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;;
@@ -27,6 +30,10 @@ public class MainViewModel extends ViewModel {
 
     public void passarResultado(){
         mutableLiveData.setValue(String.valueOf(mainModel.getResultado()));
+    }
+
+    public void visibilidade(TextView textoResultado){
+        textoResultado.setVisibility(View.VISIBLE);
     }
 
 }
